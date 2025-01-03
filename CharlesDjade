@@ -1,9 +1,7 @@
- Microsoft Windows [version 10.0.17763.529]
-(c) 2018 Microsoft Corporation. Tous droits réservés.
 
 C:\Users\pc>git config --global user.name "charlesdjade"
 
-C:\Users\pc>git config --global user.email "communicationh4@gmail.com"
+C:\Users\pc>git config --global user.email "communication@gmail.com"
 
 C:\Users\pc>git config --list
 diff.astextplain.textconv=astextplain
@@ -21,41 +19,43 @@ credential.helper=manager
 credential.https://dev.azure.com.usehttppath=true
 init.defaultbranch=master
 user.name=charlesdjade
-user.email=communicationh4@gmail.com
+user.email=communication@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
 
-C:\Users\pc>mkdir mon-projet
-Un sous-répertoire ou un fichier mon-projet existe déjà.
+C:\Users\pc>mkdir ton-projet
 
-C:\Users\pc>cd mon-projet
+C:\Users\pc>cd ton-projet
 
-C:\Users\pc\mon-projet>git init
-Reinitialized existing Git repository in C:/Users/pc/mon-projet/.git/
+C:\Users\pc\ton-projet>git init
+Initialized empty Git repository in C:/Users/pc/ton-projet/.git/
 
-C:\Users\pc\mon-projet>echo. > README.md #commande
+C:\Users\pc\ton-projet>
+C:\Users\pc\ton-projet>echo. > README.md
 
-C:\Users\pc\mon-projet>echo "mode apprentissage" > README.md
+C:\Users\pc\ton-projet>touch README.md
+'touch' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
 
-C:\Users\pc\mon-projet>git add README.md
+C:\Users\pc\ton-projet>echo "Description du projet" > README.md
 
-C:\Users\pc\mon-projet>git commit -m "Premier commit"
-[main 1855b54] Premier commit
- 1 file changed, 1 insertion(+), 1 deletion(-)
+C:\Users\pc\ton-projet>git add README.m
+fatal: pathspec 'README.m' did not match any files
 
-C:\Users\pc\mon-projet>git status
-On branch main
-nothing to commit, working tree clean
+C:\Users\pc\ton-projet>git commit -m "Premier commit"
+On branch master
 
-C:\Users\pc\mon-projet>git log
-commit 1855b5485bee995f3def7d55fe916a0a25cc02e4 (HEAD -> main)
-Author: charlesdjade <communicationh4@gmail.com>
-Date:   Fri Dec 27 15:25:49 2024 +0100
+Initial commit
 
-    Premier commit
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
 
-commit fc309df58ae0828f71193f0be44bc872ab3c0ac9
-Author: charlesdjade <communicationh4@gmail.com>
-Date:   Fri Dec 27 14:41:19 2024 +0100
+nothing added to commit but untracked files present (use "git add" to track)
 
-    Premier commit
-
-C:\Users\pc\mon-projet>
+C:\Users\pc\ton-projet>
+C:\Users\pc\ton-projet>
